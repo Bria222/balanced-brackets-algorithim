@@ -1,73 +1,47 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+## How to solve this challenge?
 
-# Project Name
-
-> Description the project.
-
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+1. Read the "Challenge description" below.
+2. Make changes to the [challenge.js](./challenge.js) file.
+3. Commit your changes.
+4. Wait for the result of the "GitHub Classroom Workflow" action. If it is green - congratulations, you solved this challenge! If not - try again!
+5. *You can watch an example of how to solve a challenge in the video linked in the theoretical lesson preceding this challenge.*
 
 
-## Getting Started
+## Challenge description
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+### Balanced Brackets challenge
+
+There are 3 kinds of Brackets: [] {} (). Given a String  of characters, check if all the brackets in the String are Balanced. A  string is balanced if all the start and end brackets are in a correct  order so they match each other.
+Here are some balanced Strings:
+
+- {}
+- (hello)[world]
+- [({}{}{})([])]
+
+Here are some Unbalanced ones:
+
+- (hello - no ending )
+- ([)] - The [ is improperly enclosed in the ().
+- )( - There's an ending ) without a ( before it.
+
+Return true if a line is balanced and false otherwise.
+
+#### Examples
+
+The following are 3 test cases:
+
+```js
+console.log(balanced_brackets?('(hello)[world]'))
+// => true
+
+console.log(balanced_brackets?('([)]'))
+// => false
+
+console.log(balanced_brackets?('[({}{}{})([])]'))
+// => true
+```
 
 
-To get a local copy up and running follow these simple example steps.
+### Troubleshooting
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+If you cannot see any auto-grading workflows on the [Actions](../../actions) page, learn how to fix it in [this repo](https://github.com/microverse-students/autograding-troubles-js/blob/main/README.md).
